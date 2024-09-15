@@ -5,8 +5,9 @@ package taller
 
 object App {
   def main(args: Array[String]): Unit = {
-    println(greeting())
+    val caso1 = new programacion()
+    println(caso1.maxLin(List(1, 2, 3, 4, 5, 70,22,110,6, 7, 8, 9, 10)))//Debe imprimir 110
+    println(caso1.maxIt(List(3,1,6,2,9)))//Debe imprimir 9
+    println(caso1.maxIt(List(3,1,6,66,2,9,20)))//Debe imprimir 66
   }
-
-  def greeting(): String = "Hello, world!"
 }
