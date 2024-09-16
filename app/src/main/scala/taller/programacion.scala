@@ -1,7 +1,7 @@
 package taller
 import scala.annotation.tailrec
-
-class programacion {
+    
+class Programacion {
   def maxLin(lst: List[Int]): Int = {
     if(lst.isEmpty) 0
     else if(lst.head > maxLin(lst.tail)) lst.head
