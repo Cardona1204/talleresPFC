@@ -6,17 +6,40 @@ package taller
 object App {
   def main(args: Array[String]): Unit = {
     val caso1 = new Programacion()
-    println(caso1.maxLin(List(1, 2, 3, 4, 5, 70,22,110,6, 7, 8, 9, 10)))//Debe imprimir 110
-    println(caso1.maxIt(List(3,1,6,2,9)))//Debe imprimir 9
-    println(caso1.maxIt(List(3,1,6,66,2,9,20)))//Debe imprimir 66
-    println(caso1.maxIt(List(3,7,2,5)))//Debe imprimir 7
+    //MaxLin
+    // println("Valor de la prueba: "+ caso1.maxLin(List(1, 2, 3, 4, 5, 70,22,110,6, 7, 8, 9, 10)))
+    // println("Valor de la prueba: "+ caso1.maxLin(List(3,1,6,2,9)))
+    // println("Valor de la prueba: "+ caso1.maxLin(List(3,1,6,66,2,9,20)))
+    // println("Valor de la prueba: "+ caso1.maxLin(List(3,7,2,5)))
+    // println("Valor de la prueba: "+ caso1.maxLin(List(3,1,6,2,9,13,14,21,1)))
+
+    //MaxIt
+    // println("Valor de la prueba: "+ caso1.maxIt(List(1,8,9,2,3,4)))
+    // println("Valor de la prueba: "+ caso1.maxIt(List(3,1,6,14)))
+    // println("Valor de la prueba: "+ caso1.maxIt(List(3,1,6,66,2,9,20)))
+    // println("Valor de la prueba: "+ caso1.maxIt(List(3,7,2,5)))
+    // println("Valor de la prueba: "+ caso1.maxIt(List(3,1,6,2,9,13,14,21,1)))
+  
 
     //pruebas para hanoi
-    val caso2 = new TorresHanoi()
-    println(caso2.movsTorresHanoi(4))//Debe imprimir 15
-    println(caso2.movsTorresHanoi(3))//Debe imprimir 7  
-    println(caso2.torresHanoi(3,1,2,3))//Debe imprimir List((1,3), (1,2), (3,2), (1,3), (2,1), (2,3), (1,3))
-    println(caso2.torresHanoi(4,1,2,3))//Debe imprimir List((1,2), (1,3), (2,3), (1,2), (3,1), (3,2), (1,2), (1,3), (2,3), (2,1), (3,1), (2,3), (1,2), (1,3), (2,3))
+    val caso3 = new TorresHanoi()
+    println("Se requieren " + caso3.movsTorresHanoi(1) + " movimientos")
+    println("Se requieren " + caso3.movsTorresHanoi(2) + " movimientos")
+    println("Se requieren " + caso3.movsTorresHanoi(3) + " movimientos")
+    println("Se requieren " + caso3.movsTorresHanoi(4) + " movimientos")
+    println("Se requieren " + caso3.movsTorresHanoi(5) + " movimientos")
+
+    // println(caso3.torresHanoi(1,1,2,3))
+    // println(caso3.torresHanoi(2,1,2,3))
+    // println(caso3.torresHanoi(3,1,2,3))
+    // println(caso3.torresHanoi(4,1,2,3))
+    // println(caso3.torresHanoi(5,1,2,3))
+
+    // println("Los movimientos necesarios son: " + caso2.movsTorresHanoi(4))//Debe imprimir 15
+    // println("Los movimientos necesarios son: " + caso2.movsTorresHanoi(3))//Debe imprimir 7  
+
+    //println("Los movimientos son: " + caso2.torresHanoi(3,1,2,3))//Debe imprimir List((1,3), (1,2), (3,2), (1,3), (2,1), (2,3), (1,3))
+   // println(caso2.torresHanoi(4,1,2,3))//Debe imprimir List((1,2), (1,3), (2,3), (1,2), (3,1), (3,2), (1,2), (1,3), (2,3), (2,1), (3,1), (2,3), (1,2), (1,3), (2,3))
 
   }
 }
